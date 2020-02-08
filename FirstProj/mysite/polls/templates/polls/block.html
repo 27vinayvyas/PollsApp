@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Details</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+</head>
+<body>
+<hr>
+<p>Header</p>
+<hr>
+    {% block main_content %}
+    {% endblock %}
+    {% include 'polls/footer.html' %}
+</body>
+</html>
